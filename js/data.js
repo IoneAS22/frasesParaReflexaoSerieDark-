@@ -72,3 +72,10 @@ const mudanca = [
     {frase: "Não poderemos mudar o grande esquema das coisas, mas os detalhes. Mudamos um grão de areia e, com isso, o mundo inteiro."},
     {frase: "Os buracos negros são considerados as bocas do inferno do universo. Aqueles que caem dentro desaparecem. Para todo sempre. Mas para onde?"}
 ]
+
+module.exports = {
+    esperanca,
+    incerteza,
+    medo,
+    mudanca    
+}
