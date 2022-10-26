@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frases Dark</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="../images/dark_logo.jpg" alt="">
     </header>
-    <main>
-        <section>
-            <label for="humor">Escolha seu humor do dia</label>
-            <select name="humor" id="humor">
-                <option value="esperanca">Esperança</option>
-                <option value="incerteza">Incerteza</option>
-                <option value="medo">Medo</option>
-                <option value="mudanca">Mudança</option>
-            </select>
-            <input type="button" value="Pesquisar" id="btnSearch">
-            <p id="retornoFrase"></p>            
+    <main class="backgroundOriginalImg">
+        <section class="transparencyArea">
+            <div class="content">
+                <label for="humor">Escolha seu humor do dia</label>
+                <select name="humor" id="humor">
+                    <option disabled selected>Escolha um sentimento</option>
+                    <option value="esperanca">Esperança</option>
+                    <option value="incerteza">Incerteza</option>
+                    <option value="medo">Medo</option>
+                    <option value="mudanca">Mudança</option>
+                </select>
+                <input type="button" value="Pesquisar" id="btnSearch">
+                <p id="retornoFrase"></p> 
+            </div>           
         </section>
     </main>
     <footer>
