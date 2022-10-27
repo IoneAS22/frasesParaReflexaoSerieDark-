@@ -5,6 +5,8 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* Imagens de Background */
+
 .backgroundOriginalImg {
     width: 100%;
     height: 100vh;
@@ -12,15 +14,68 @@
     background-size: cover;
 }
 
+.backgroundOriginalImg1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/ionas_martha.jpg');
+    background-size: cover;
+}
+
+.backgroundOriginalImg2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/ionas.png');
+    background-size: cover;
+    background-position: 50%;
+}
+
+/* Formatação e Animação Triquetra*/
+.imgTriquetra {
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 15px;
+    top: 20px;
+    width: 150px;
+    animation: turn 15s infinite forwards linear;
+}
+
+@keyframes turn {
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+}
+
+/* Background Transparência Escura*/
+
 .transparencyArea {
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(13, 13, 13, 0.6);
     color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+/* Formatação do Título */
+
+.title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 250;
+    text-shadow: 5px 5px 5px #0D0D0D;
+    letter-spacing: 50px;
+    margin-right: -30px;
+    font-size: 150px;
+    text-align: center;
+}
+
+/* Formatação da Área de Pesquisa */
 
 .content {
     display: flex;
@@ -41,11 +96,39 @@ select, input {
     border: 1px solid rgb(252, 227, 2);
 }
 
-input:hover {;
-    background-color:  rgb(252, 227, 2);
-    color: rgb(252, 227, 2);
-    border: none;
-    text-transform: lowercase;
+option {
+    background-color: #0D0D0D;
     font-weight: 200;
-    border: 1px solid rgb(252, 227, 2);
+    border: none;
+}
+
+input:hover {
+    background-color: #011526;
+    color: #F0F2F2;
+    border: none;
+    font-weight: 300;
+    box-shadow: 0 0 10px rgba(240, 242, 242, 0.6);
+}
+
+.contentPhrase {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: -900px;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.contentPhrase p {
+    font-size: 5vh;
+    margin: 0 150px 50px;
+}
+
+.contentPhraseAppers {
+    top: 0px;
 }

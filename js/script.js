@@ -76,8 +76,21 @@ let mudanca = [
 ];
 
 let btn = document.querySelector('#btnSearch');
+let btnNewSearch = document.querySelector('#newSearch');
 let selectItem = document.querySelector('#humor');
 let retornoFrase = document.querySelector('#retornoFrase');
+
+
+
+function modal () {
+    let modal = document.querySelector('.contentPhrase');    
+    modal.classList.add("contentPhraseAppers", "backgroundOriginalImg1");
+}
+
+function modalFade () {
+    let modal = document.querySelector('.contentPhrase');
+    modal.classList.remove("contentPhraseAppers");
+}
 
 function gerarFrase() {
     let lengthArray = 0;
@@ -112,9 +125,10 @@ function gerarFrase() {
 
     itemPosition = Math.floor(Math.random() * (lengthArray - 0) + 0);
     retornoFrase.innerHTML = frase;
+    modal();
 }
 
 btn.addEventListener('click', gerarFrase);
-
+btnNewSearch.addEventListener('click', modalFade);
 
 

@@ -9,12 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
     </header>
     <main class="backgroundOriginalImg">
+        <img class="imgTriquetra" src="../images/triquetra-bg.png" alt="">
         <section class="transparencyArea">
+            <h1 class="title">DARK</h1>
             <div class="content">
                 <label for="humor">Escolha seu humor do dia</label>
                 <select name="humor" id="humor">
@@ -25,7 +28,12 @@
                     <option value="mudanca">Mudança</option>
                 </select>
                 <input type="button" value="Pesquisar" id="btnSearch">
-                <p id="retornoFrase"></p> 
+                <div class="contentPhrase">
+                    <div class="transparencyArea">
+                        <p id="retornoFrase"></p>
+                        <input type="button" id="newSearch" value="Nova Pesquisa"> 
+                    </div>
+                </div>
             </div>           
         </section>
     </main>
