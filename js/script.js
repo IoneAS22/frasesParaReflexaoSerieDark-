@@ -81,15 +81,32 @@ let selectItem = document.querySelector('#humor');
 let retornoFrase = document.querySelector('#retornoFrase');
 
 
-
 function modal () {
-    let modal = document.querySelector('.contentPhrase');    
-    modal.classList.add("contentPhraseAppers", "backgroundOriginalImg1");
+    let modal = document.querySelector('.contentPhrase');
+    let classBackground;
+    switch (selectItem.value) {
+        case 'esperanca':
+            classBackground = "backgroundOriginalImg1"
+            break;
+        case 'incerteza':
+            classBackground = "backgroundOriginalImg2"
+            break;
+        case 'medo':
+            classBackground = "backgroundOriginalImg"
+            break;
+        case 'mudanca':
+            classBackground = "backgroundOriginalImg1"
+            break;
+        default:
+            break;
+    }
+
+    modal.classList.add("contentPhraseAppers", classBackground);
 }
 
 function modalFade () {
     let modal = document.querySelector('.contentPhrase');
-    modal.classList.remove("contentPhraseAppers");
+    modal.classList.removeAll();
 }
 
 function gerarFrase() {
