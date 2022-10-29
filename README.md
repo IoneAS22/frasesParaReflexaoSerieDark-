@@ -22,4 +22,4 @@ Versão mobile:
 ![dark_mobile_home](https://user-images.githubusercontent.com/99365685/198852296-fd089e26-9ded-434c-95a8-cdca4c935c40.JPG)
 ![dark_mobile_reponse](https://user-images.githubusercontent.com/99365685/198852297-1d9774e0-723e-475f-ae5b-bc74951d8cef.JPG)
 
-Atenção: Esses personagens, assim como o programa de TV mencionado neste projeto, são de propriedade da ABC America Television. Eu não possuo nada disso. Isso foi usado apenas para fins educacionais (e só porque eu gosto do show. Espero que vocês gostem).
+Atenção: Esses personagens, assim como o programa de TV mencionado neste projeto, são de propriedade da Netflix. Nada disso me pertence. As imagens foram utilizadas apenas para fins educacionais (e só porque eu gosto do show. Espero que vocês gostem).
