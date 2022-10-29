@@ -1,0 +1,21 @@
+{
+  "name": "Projeto2_Frases_Dark",
+  "version": "1.0.0",
+  "description": "Gerador de Frases da Série Dark para reflexão.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IoneAS22/frasesParaReflexaoSerieDark-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IoneAS22/frasesParaReflexaoSerieDark-/issues"
+  },
+  "homepage": "https://github.com/IoneAS22/frasesParaReflexaoSerieDark-#readme"
+}

@@ -17,21 +17,23 @@
     <main class="backgroundOriginalImg">
         <img class="imgTriquetra" src="../images/triquetra-bg.png" alt="">
         <section class="transparencyArea">
-            <h1 class="title">DARK</h1>
             <div class="content">
-                <label for="humor">Escolha seu humor do dia</label>
+                <h1 class="title">DARK</h1>
+                <label for="humor">Frases da série que te farão refletir. Escolha um tema:</label>
                 <select name="humor" id="humor">
-                    <option disabled selected>Escolha um sentimento</option>
+                    <option disabled selected>temas</option>
                     <option value="esperanca">Esperança</option>
                     <option value="incerteza">Incerteza</option>
                     <option value="medo">Medo</option>
                     <option value="mudanca">Mudança</option>
                 </select>
-                <input type="button" value="Pesquisar" id="btnSearch">
+                <input type="button" value="pesquisar" id="btnSearch">
                 <div class="contentPhrase">
                     <div class="transparencyArea">
-                        <p id="retornoFrase"></p>
-                        <input type="button" id="newSearch" value="Nova Pesquisa"> 
+                        <div class="phraseArea">
+                            <p id="retornoFrase"></p>
+                            <input type="button" id="btnNewSearch" value="nova pesquisa">                             
+                        </div>
                     </div>
                 </div>
             </div>           
@@ -39,7 +41,7 @@
     </main>
     <footer>
     </footer>    
-    <script src="../js/script.js"></script>
+    <script type="module" src="../js/script.js"></script>
 </body>
 
 </html>

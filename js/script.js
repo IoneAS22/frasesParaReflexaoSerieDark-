@@ -1,6 +1,6 @@
 //Arrays
 
-let esperanca = [
+const esperanca = [
     '"Mas tudo o que uma vez viveu, vive para sempre. Na eternidade do tempo."',
     '"Não importa o quanto lutemos, estamos conectados pelo nosso sangue."',
     '"Talvez o Big Bang não seja nada mais do que o ato de criação de Deus."',
@@ -14,7 +14,7 @@ let esperanca = [
     '"A verdade é uma coisa estranha. Você pode tentar suprimi-la, mas ela sempre encontrará o caminho para a superfície."'    
 ];
 
-let incerteza = [
+const incerteza = [
     '"Mas de vez em quando é bom questionar quem questiona as coisas."',
     '"Se agora eu mudar meu passado, mudarei quem sou agora."',
     '"Existem coisas por aí que nossas pequenas mentes nunca compreenderão."',
@@ -43,7 +43,7 @@ let incerteza = [
     '"O espaço e o tempo estariam ligados e fariam parte de um ciclo sem fim? E se tudo que veio do passado fosse influenciado pelo futuro?"'   
 ];
 
-let medo = [
+const medo = [
     '"Todos enfrentamos o mesmo fim. Aqueles acima há muito se esqueceram de nós."',
     '"Toda dor nos leva a agir, forma nossa vontade."',
     '"O inferno está vazio e todos os demônios estão aqui."',
@@ -60,7 +60,7 @@ let medo = [
     '"Nós tornamos uma mentira em nossa verdade para sobreviver. Tentamos esquecer, até não podermos mais."'
 ];
 
-let mudanca = [
+const mudanca = [
     '"Mas você tem que fazer isso com habilidade, em segredo. Então parece mágica."',
     '"Não somos livres no que fazemos, porque não somos livres no que queremos."',
     '"Não podemos superar o que está dentro de nós."',
@@ -76,14 +76,16 @@ let mudanca = [
 ];
 
 let btn = document.querySelector('#btnSearch');
-let btnNewSearch = document.querySelector('#newSearch');
+let btnNewSearch = document.querySelector('#btnNewSearch');
 let selectItem = document.querySelector('#humor');
 let retornoFrase = document.querySelector('#retornoFrase');
 
 
 function modal () {
     let modal = document.querySelector('.contentPhrase');
+    modal.classList.remove("backgroundOriginalImg1", "backgroundOriginalImg2", "backgroundOriginalImg3", "backgroundOriginalImg4");
     let classBackground;
+    
     switch (selectItem.value) {
         case 'esperanca':
             classBackground = "backgroundOriginalImg1"
@@ -92,21 +94,15 @@ function modal () {
             classBackground = "backgroundOriginalImg2"
             break;
         case 'medo':
-            classBackground = "backgroundOriginalImg"
+            classBackground = "backgroundOriginalImg3"
             break;
         case 'mudanca':
-            classBackground = "backgroundOriginalImg1"
+            classBackground = "backgroundOriginalImg4"
             break;
         default:
             break;
     }
-
     modal.classList.add("contentPhraseAppers", classBackground);
-}
-
-function modalFade () {
-    let modal = document.querySelector('.contentPhrase');
-    modal.classList.removeAll();
 }
 
 function gerarFrase() {
@@ -143,6 +139,11 @@ function gerarFrase() {
     itemPosition = Math.floor(Math.random() * (lengthArray - 0) + 0);
     retornoFrase.innerHTML = frase;
     modal();
+}
+
+function modalFade () {
+    let modal = document.querySelector('.contentPhrase');
+    modal.classList.remove("contentPhraseAppers");
 }
 
 btn.addEventListener('click', gerarFrase);
