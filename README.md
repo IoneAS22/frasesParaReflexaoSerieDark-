@@ -9,7 +9,7 @@ Tecnologias utilizadas na realização desse projeto:
 <p>[X] CSS</p>
 <p>[X] Javascript - Arrays, Funções, Estrutura de Decisão "Switch", manipulação do DOM e Event Listener</p>
 
-Você pode verificar o projeto em: https://ionealves.github.io/Gerador_Frases_Para_Reflexao_Serie_Dark/
+Você pode acessar o projeto em: https://ionealves.github.io/Gerador_Frases_Para_Reflexao_Serie_Dark/
 
 Versão desktop:
 
